@@ -13,7 +13,7 @@ export default function validate(values) {
     }
 
     if (!values.postalCode || !isFiveChars(values.postalCode)) {
-        errors.postalCode = 'Please enter a valid postal code!';
+        errors.postalCode = 'Please enter a valid postal code (5 characters)!';
     }
 
     if (!values.city || isEmpty(values.city)) {
